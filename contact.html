@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Wecite</title>
+  <meta name="description" content="Prepare a project brief for a business website or custom software.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#075879">
+  <link rel="icon" href="assets/wecite-youtube-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="Wecite home"><img src="assets/wecite-wordmark-cream.svg" width="233" height="68" alt="wecite"></a>
+      <nav class="site-nav" aria-label="Main navigation"><a href="services.html">Services</a>
+        <a href="work.html">Project examples</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="nav-contact" aria-current="page">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="page-hero">
+  <div class="wrap measure">
+    <p class="eyebrow">Contact</p>
+    <h1>Tell us what you want to build</h1>
+    <p class="lede">Prepare a short brief that explains the need and what a useful first version would do.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="wrap contact-grid">
+    <aside class="brief-aside">
+      <h2>What to include</h2>
+      <p>Tell us who will use the website or software, what they are trying to do, and what gets in their way today.</p>
+      <p>Leave out client records, passwords, and confidential information.</p>
+      <p>Contact details will be posted when Wecite starts accepting inquiries.</p>
+      <a class="text-link" href="privacy.html">How this page handles your brief</a>
+    </aside>
+    <div class="brief-panel">
+      <h2>Project brief</h2>
+      <p id="brief-help">Copy a draft or save a text file. Your entries stay in your browser until you choose what to do with them.</p>
+      <noscript><p>Enable JavaScript to use the brief builder. You can also <a class="text-link" href="assets/project-brief.txt" download>download a blank brief</a>.</p></noscript>
+      <form id="brief-form" hidden aria-describedby="brief-help">
+        <label for="service">What do you need?</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service</option>
+          <option value="website">Business website</option>
+          <option value="system">Custom business system</option>
+          <option value="unsure">Still deciding</option>
+        </select>
+        <label for="company">Business name <span>(optional)</span></label>
+        <input id="company" name="company" maxlength="100" autocomplete="organization">
+        <label for="details">What problem do you want to solve?</label>
+        <textarea id="details" name="details" rows="6" maxlength="2000" required placeholder="For example, customer requests arrive in several places and we lose track of follow-ups."></textarea>
+        <div class="actions">
+          <button class="button" type="submit" value="download">Download brief</button>
+          <button class="button button-light-outline" type="submit" value="copy">Copy brief</button>
+        </div>
+        <p id="brief-status" class="brief-status" role="status"></p>
+        <label for="brief-output" id="brief-output-label" hidden>Prepared brief</label>
+        <textarea id="brief-output" rows="6" readonly hidden></textarea>
+      </form>
+    </div>
+  </div>
+</section>
+
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-main">
+      <div>
+        <a class="brand" href="index.html" aria-label="Wecite home"><img src="assets/wecite-wordmark.svg" width="233" height="68" alt="wecite"></a>
+        <p>Software development for businesses in Saudi Arabia.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <a href="services.html">Services</a>
+        <a href="work.html">Project examples</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
+    <div class="wrap footer-note"><span>Wecite</span><span>Website preview</span></div>
+  </footer>
+  <script src="brief.js" defer></script>
+</body>
+</html>

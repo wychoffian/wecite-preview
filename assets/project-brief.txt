@@ -1,0 +1,10 @@
+Wecite project brief
+
+Service:
+Business name (optional):
+
+What problem do you want to solve?
+Who will use the website or software?
+What should the first version do?
+
+Leave out passwords and confidential client information.
