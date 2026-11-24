@@ -34,7 +34,7 @@ details.addEventListener("input", () => details.setCustomValidity(""));
 briefForm.addEventListener("submit", async (event) => {
   event.preventDefault();
   if (!details.value.trim()) {
-    details.setCustomValidity("Please describe what you want to build.");
+    details.setCustomValidity("Please describe what you would like to achieve.");
     details.reportValidity();
     return;
   }

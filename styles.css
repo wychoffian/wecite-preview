@@ -141,6 +141,12 @@ p { margin: 1rem 0 0; }
 .browser-icon { width: 1.45rem; height: 1.15rem; border: 2px solid; border-radius: .15rem; }
 .browser-icon::before { content: ""; display: block; margin-top: .25rem; border-top: 2px solid; }
 .system-icon { width: .62rem; height: .62rem; border: 2px solid; border-radius: .15rem; box-shadow: .74rem 0 currentColor, 0 .74rem currentColor, .74rem .74rem currentColor; transform: translate(-.37rem, -.37rem); }
+.training-icon { width: 1.4rem; height: 1.1rem; border: 2px solid; border-radius: .15rem; }
+.training-icon::before { content: ""; display: block; height: 100%; border-left: 2px solid; margin-left: calc(50% - 1px); }
+.consultancy-icon { width: 1.4rem; height: 1rem; border: 2px solid; border-radius: .3rem .3rem .3rem 0; }
+.consultancy-icon::after { content: ""; display: block; width: .72rem; margin: .32rem auto; border-top: 2px solid; }
+.research-icon { width: .95rem; height: .95rem; border: 2px solid; border-radius: 50%; transform: translate(-.14rem, -.14rem); }
+.research-icon::after { content: ""; display: block; width: .54rem; border-top: 2px solid; transform: translate(.63rem, .66rem) rotate(45deg); }
 .feature-grid, .detail-grid, .contact-grid {
   display: grid;
   grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
