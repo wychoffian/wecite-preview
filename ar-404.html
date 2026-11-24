@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#075879">
   <link rel="icon" href="/wecite-preview/assets/wecite-youtube-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/wecite-preview/styles.css">
+  <script src="/wecite-preview/theme.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -19,7 +20,13 @@
         <a href="/wecite-preview/ar-work.html">المشاريع</a>
         <a href="/wecite-preview/ar-about.html">عن وي سايت</a>
         <a href="/wecite-preview/ar-contact.html" class="nav-contact">تواصل معنا</a>
-        <a href="/wecite-preview/404.html" class="language-switch" lang="en" hreflang="en">English</a></nav>
+        <a href="/wecite-preview/404.html" class="language-switch" lang="en" hreflang="en">English</a>
+        <select class="theme-select" aria-label="مظهر الموقع" hidden>
+          <option value="system">حسب الجهاز</option>
+          <option value="light">فاتح</option>
+          <option value="dark">داكن</option>
+        </select>
+      </nav>
     </div>
   </header>
   <main id="main" tabindex="-1">
@@ -36,7 +43,10 @@
   <footer class="footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="/wecite-preview/ar.html" aria-label="الصفحة الرئيسية لوي سايت"><img src="/wecite-preview/assets/wecite-wordmark.svg" width="233" height="68" alt=""></a>
+        <a class="brand" href="/wecite-preview/ar.html" aria-label="الصفحة الرئيسية لوي سايت">
+          <img class="footer-logo-light" src="/wecite-preview/assets/wecite-wordmark.svg" width="233" height="68" alt="">
+          <img class="footer-logo-dark" src="/wecite-preview/assets/wecite-wordmark-cream.svg" width="233" height="68" alt="">
+        </a>
         <p>خدمات تقنية للمنشآت في المملكة العربية السعودية.</p>
       </div>
       <nav aria-label="روابط تذييل الموقع"><a href="/wecite-preview/ar-services.html">الخدمات</a>

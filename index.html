@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#075879">
   <link rel="icon" href="assets/wecite-youtube-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -19,7 +20,13 @@
         <a href="work.html">Projects</a>
         <a href="about.html">About</a>
         <a href="contact.html" class="nav-contact">Contact</a>
-        <a href="ar.html" class="language-switch" lang="ar" hreflang="ar">العربية</a></nav>
+        <a href="ar.html" class="language-switch" lang="ar" hreflang="ar">العربية</a>
+        <select class="theme-select" aria-label="Color theme" hidden>
+          <option value="system">System</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+        </select>
+      </nav>
     </div>
   </header>
   <main id="main" tabindex="-1">
@@ -121,7 +128,10 @@
   <footer class="footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="index.html" aria-label="Wecite home"><img src="assets/wecite-wordmark.svg" width="233" height="68" alt=""></a>
+        <a class="brand" href="index.html" aria-label="Wecite home">
+          <img class="footer-logo-light" src="assets/wecite-wordmark.svg" width="233" height="68" alt="">
+          <img class="footer-logo-dark" src="assets/wecite-wordmark-cream.svg" width="233" height="68" alt="">
+        </a>
         <p>Technology services for businesses in Saudi Arabia.</p>
       </div>
       <nav aria-label="Footer navigation"><a href="services.html">Services</a>

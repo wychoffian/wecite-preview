@@ -9,6 +9,7 @@
   <meta name="theme-color" content="#075879">
   <link rel="icon" href="assets/wecite-youtube-icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script src="theme.js"></script>
 </head>
 <body>
   <a class="skip" href="#main">انتقل إلى المحتوى</a>
@@ -19,7 +20,13 @@
         <a href="ar-work.html">المشاريع</a>
         <a href="ar-about.html">عن وي سايت</a>
         <a href="ar-contact.html" class="nav-contact">تواصل معنا</a>
-        <a href="privacy.html" class="language-switch" lang="en" hreflang="en">English</a></nav>
+        <a href="privacy.html" class="language-switch" lang="en" hreflang="en">English</a>
+        <select class="theme-select" aria-label="مظهر الموقع" hidden>
+          <option value="system">حسب الجهاز</option>
+          <option value="light">فاتح</option>
+          <option value="dark">داكن</option>
+        </select>
+      </nav>
     </div>
   </header>
   <main id="main" tabindex="-1">
@@ -35,6 +42,7 @@
     <p>تُعدّ أداة الموجز النص في متصفّحك، ولا ترسل مدخلاتك إلى خادم أو تخزّنها عليه. عند نسخ الموجز، يضع جهازك النص في الحافظة. وعند تنزيله، يحفظ المتصفّح ملفاً نصياً على جهازك.</p>
     <h2>زيارات الموقع</h2>
     <p>لا يستخدم موقع وي سايت أدوات تحليل الزيارات أو التتبّع الإعلاني أو ملفات تعريف الارتباط. وقد يعالج مزوّد الاستضافة المعلومات التقنية اللازمة لعرض الموقع.</p>
+    <p>إذا اخترت المظهر الفاتح أو الداكن، يحفظ المتصفّح اختيارك على جهازك. وعند اختيار «حسب الجهاز»، يُمسح الاختيار المحفوظ ويتّبع الموقع إعداد جهازك.</p>
     <h2>مشاركة الموجز</h2>
     <p>إذا شاركت الموجز عبر البريد الإلكتروني أو خدمة أخرى، فستتعامل تلك الخدمة مع المعلومات التي ترسلها. تجنّب إدراج كلمات المرور أو معلومات العملاء السرية.</p>
     <a class="text-link" href="ar-contact.html">انتقل إلى موجز المشروع</a>
@@ -45,7 +53,10 @@
   <footer class="footer">
     <div class="wrap footer-main">
       <div>
-        <a class="brand" href="ar.html" aria-label="الصفحة الرئيسية لوي سايت"><img src="assets/wecite-wordmark.svg" width="233" height="68" alt=""></a>
+        <a class="brand" href="ar.html" aria-label="الصفحة الرئيسية لوي سايت">
+          <img class="footer-logo-light" src="assets/wecite-wordmark.svg" width="233" height="68" alt="">
+          <img class="footer-logo-dark" src="assets/wecite-wordmark-cream.svg" width="233" height="68" alt="">
+        </a>
         <p>خدمات تقنية للمنشآت في المملكة العربية السعودية.</p>
       </div>
       <nav aria-label="روابط تذييل الموقع"><a href="ar-services.html">الخدمات</a>
