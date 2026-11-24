@@ -8,7 +8,7 @@ const outputLabel = document.querySelector("#brief-output-label");
 const languageSwitches = document.querySelectorAll("a[hreflang]");
 const arabic = document.documentElement.lang === "ar";
 const labels = arabic ? {
-  title: "موجز مشروع وي سايت",
+  title: "موجز مشروع ويسايت",
   service: "الخدمة",
   business: "المنشأة",
   details: "تفاصيل المشروع",
